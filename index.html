@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <h2></h2>
+        <label class="switch">
+            <input type="checkbox" onclick="switchTheme()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <form>
+            <input type="text" placeholder="Username" id="login-input">
+            <input type="password" placeholder="Password" id="login-input">
+            <button type="submit" id="login-button">Login</button>
+        </form>
+        <div class="sign-up">
+            <p id="sign-up">Don't have account?<a href="#">Signup</a></p>
+            <p id="options">Or Signup with</p>
+            <hr>
+            <div class="choice">
+                <ul id="choices">
+                    <li><a href="#"><img src="./images/google-brands.svg"></a></li>
+                    <li><a href="#"><img src="./images/facebook-f-brands.svg"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

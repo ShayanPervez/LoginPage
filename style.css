@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;1,100&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
+.login-box {
+  background-color: white;
+  max-width: fit-content;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px 0 30px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .login-box {
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .login-box {
+    max-width: 75%;
+  }
+}
+.login-box h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  background-clip: text;
+  background: -webkit-linear-gradient(110deg, #bb001b 0%, #d103d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f5ff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+input.dark-mode {
+  background-color: #424242;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+
+form button {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: transparent linear-gradient(110deg, #bb001b 0%, #d103d9 100%) 0%
+    0% no-repeat padding-box;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+form button .dark-mode {
+  cursor: pointer;
+  background-color: #43a0da;
+}
+form button .dark-mode:hover {
+  background-color: #875ad1;
+}
+
+form button:focus {
+  outline: none;
+}
+
+h2 {
+  text-align: right;
+  color: #232c3d;
+  transition: 0.5s;
+}
+
+h2::before {
+  content: "Switch to Dark Mode";
+}
+
+h2.dark-mode {
+  color: white;
+}
+h2.dark-mode::before {
+  content: "Switch to light Mode";
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+  margin-left: 90%;
+}
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 33px;
+  transition: 0.5s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.switch input:checked + .slider {
+  background-color: #794bc4;
+}
+@media screen and (max-width: 750px) {
+  .switch {
+    margin-left: 80%;
+  }
+}
+
+.sign-up {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+#sign-up a {
+  text-decoration: none;
+}
+hr {
+  color: #424242;
+  opacity: 0.4;
+}
+.choice #choices {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -30px;
+}
